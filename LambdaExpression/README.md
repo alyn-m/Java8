@@ -2,6 +2,7 @@
  - Lambda Expression is a function without a name, that can be passed around as variable.
  - It is created to enable fucntional programming in Java
 >💡 In simple terms: A lambda is a short way of writing anonymous methods.
+
 ** Note: We need to create functional interface before creating a lamdba expression. if there is not functional interface then there is not lambda expression possible **
 # Lambda Expression Syntax
 - The Lambda Expression composed of 3 elements seperated by arrow token(->):
@@ -11,7 +12,8 @@
         - -> (arrow token): Separates the parameters from the body.
         - Body : The expression or block({}) of code that executes when the method is called.
     - Example:
-      ``` Runnable task = () -> System.out.println("Running thread...");
+      ```
+        Runnable task = () -> System.out.println("Running thread...");
         new Thread(task).start();
       ```
 
