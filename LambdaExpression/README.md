@@ -4,7 +4,7 @@
 >💡 In simple terms: A lambda is a short way of writing anonymous methods.
 
 ** Note: We need to create functional interface before creating a lamdba expression. if there is not functional interface then there is not lambda expression possible **
-# Lambda Expression Syntax
+### Lambda Expression Syntax
 - The Lambda Expression composed of 3 elements seperated by arrow token(->):
     - Syntax:
         - (params) -> {body of expression}
@@ -26,3 +26,7 @@
 ### Why we need a functional interface to create lambda expression
 > A lambda expression has no type on its own. The Java compiler needs to know: “Which method’s implementation is this lambda providing?”
 > we can use built-in functional interfaces to lambdas.
+
+## Build-In Lambda Expressions
+
+# Use Cases of Lambda Expressions
