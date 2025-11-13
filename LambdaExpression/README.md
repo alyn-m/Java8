@@ -3,7 +3,7 @@
  - It is created to enable fucntional programming in Java
 >💡 In simple terms: A lambda is a short way of writing anonymous methods.
 
-**Note:**
+> [!NOTE]
 - We need to create functional interface before creating a lamdba expression. if there is not functional interface then there is not lambda expression possible.
 - Without a functional interface, you cannot create or use a lambda expression in Java.
 
@@ -44,8 +44,15 @@
 > we can use built-in functional interfaces to lambdas.
 
 ## Build-In Functional Interfaces
+>[!IMPORTANT]
 >Java does not have built-in Lambda Expressions, Java does have build-in functional interfaces and you provide the lambda expression that implement them
 
- 1. 
+Build-In Functional interfaces are pre-defined interfaces provided by java in the package java.util.function, designed to work with lambda expressions and method refrences.
+>[!Note]
+>all built-in interfaces are provided in java.util.function pakage
+**Categories of Built-In Functional Interfaces**
+|Category|Interface|Method|Description|Example|
+|--------|---------|------|-----------|-------|
+|Consumer|Consumer<T>|accept(T t)|Takes input returns nothing|x->|
 
 # Use Cases of Lambda Expressions
