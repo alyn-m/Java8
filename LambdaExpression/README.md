@@ -27,10 +27,25 @@
       3. Multiple Parameters
       4. Single Expression Body
      
+    - Based on Return Type
+      1. Void (no return)
+          ```
+           Consumer<String> show = msg -> System.out.println(msg);
+           show.accept("Hello!");
+          ```
+      2. Value-returning
+          ```
+           Function<Integer, Integer> squre = x -> x * x;
+           System.out.println(squre.apply(4));
+          ```  
+     
 ### Why we need a functional interface to create lambda expression
 > A lambda expression has no type on its own. The Java compiler needs to know: “Which method’s implementation is this lambda providing?”
 > we can use built-in functional interfaces to lambdas.
 
-## Build-In Lambda Expressions
+## Build-In Functional Interfaces
+>Java does not have built-in Lambda Expressions, Java does have build-in functional interfaces and you provide the lambda expression that implement them
+
+ 1. 
 
 # Use Cases of Lambda Expressions
