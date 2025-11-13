@@ -56,7 +56,7 @@ Build-In Functional interfaces are pre-defined interfaces provided by java in th
 |--------|---------|------|-----------|-------|
 |Consumer|Consumer < T >|accept(T t)|Takes input returns nothing|x->|
 |Supplier|Supplier < T >| get() | Takes no input returns output|X->|
-|Function|Function &lt T, R &gt| apply(T t)|Takes input returns output|x->|
+|Function|Function <T, R>| apply(T t)|Takes input returns output|x->|
 |Predicate|Predicate &lt T &gt | test(T t) | Takes input returns boolean|x->|
 |Operator|Operator &lt T &gt|apply(T t)|Input and Output are same type|x->|
 
