@@ -28,8 +28,20 @@ What we can do with Stream API:
 |1️⃣ Source|2️⃣ Intermediate Operations|3️⃣ Terminal Operations|
 |---------|--------------------------|----------------------|
 |This is where the stream begins-data comes from|These are lazy operations that transform or filter the stream’s data|These are eager operations — once called, the entire pipeline executes|
+|Collections(List, Set, etc)|filter(Predicate)|collect(Collector)|
+|Arrays|map(Function)|forEach(Consumer)|
+|I/O Channels (Files, etc.)|distinct()|reduce(...)|
+|Generators|sorted()|count()|
+|Other Streams|limit(n)|findFirst()|
 
 ## How Streams works internally
+|Stage|Operation|Description|
+|-----|---------|-----------|
+|1️⃣|names.stream()|Creates stream source|
+|2️⃣|filter()|Keeps only “A” starting names|
+|3️⃣|map()|Converts to uppercase|
+|4️⃣|sorted()|Alphabetically sorts|
+|5️⃣|collect()|Executes pipeline and collects results|
 
 
 ## Examples of Stream API Usage
