@@ -3,7 +3,8 @@
  - It is created to enable fucntional programming in Java
 >💡 In simple terms: A lambda is a short way of writing anonymous methods.
 
-** Note: We need to create functional interface before creating a lamdba expression. if there is not functional interface then there is not lambda expression possible **
+** Note: We need to create functional interface before creating a lamdba expression. if there is not functional interface then there is not lambda expression possible.**
+
 **Implementation of functional interface method is known as lamdba expression**
 ### Lambda Expression Syntax
 - The Lambda Expression composed of 3 elements seperated by arrow token(->):
