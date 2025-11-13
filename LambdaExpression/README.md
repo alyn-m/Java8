@@ -55,11 +55,11 @@ Build-In Functional interfaces are pre-defined interfaces provided by java in th
 
 |Category|Interface|Method|Description|Example|
 |--------|---------|------|-----------|-------|
-|Consumer|Consumer < T>|accept(T t)|Takes input returns nothing|```x->System.out.println(x);```|
-|Supplier|Supplier < T>| get() | Takes no input returns output|```()->"Hello";```|
-|Function|Function <T, R>| apply(T t)|Takes input returns output|```x-> x*2```|
-|Predicate|Predicate < T> | test(T t) | Takes input returns boolean|```x -> x >10```|
-|Operator|Operator < T>|apply(T t)|Input and Output are same type|```x -> x.toUpperCase()```|
+|Consumer|Consumer < T>|accept(T t)|Takes input returns nothing. Consumer only consumes somthing returns nothing|```x->System.out.println(x);```|
+|Supplier|Supplier < T>| get() | Takes no input returns output. Supplier supplies/return something but will not take anything|```()->"Hello";```|
+|Function|Function <T, R>| apply(T t)|Takes input returns output. |```x-> x*2```|
+|Predicate|Predicate < T> | test(T t) | Takes input returns boolean. Predicate predicts something based on input and return true or false|```x -> x >10```|
+|Operator|Operator < T>|apply(T t)|Input and Output are same type. |```x -> x.toUpperCase()```|
 
 # Use Cases of Lambda Expressions
 
