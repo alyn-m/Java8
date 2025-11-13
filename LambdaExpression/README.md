@@ -63,7 +63,7 @@ Build-In Functional interfaces are pre-defined interfaces provided by java in th
 
 # Use Cases of Lambda Expressions
 
-##💻 Example: Using All Core Functional Interfaces
+## 💻 Example: Using All Core Functional Interfaces
 ```
 import java.util.function.*;
 
