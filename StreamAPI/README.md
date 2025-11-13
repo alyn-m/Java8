@@ -60,7 +60,6 @@ What we can do with Stream API:
  5.  Group items by name and count their occurrences
 
 
-
 ## Use Cases:
 1. Filtering          : Get all employees with salary > 100k
 2. Transformation     : Convert all names to uppercase
@@ -68,3 +67,40 @@ What we can do with Stream API:
 4. Parallel Streams : Analyze logs or large datasets concurrently
 5. Searching          : Find first user from a specific country
 6. Grouping           : Group products by category
+
+# Fundamentals
+## Everything about Streams
+What is Stream?
+- It is a sequence of elements.
+
+### Basic Syntax
+ 1️⃣ Using Stream.of()
+   ```
+     Stream<String> stream = Stream.of("Alpha", "Beta", "Gamma");
+     stream.forEach(System.out::println);
+   ```
+ 2️⃣ Using Stream.builder()
+  ```
+   Stream<String> stream = Stream.<String>builder()
+                              .add("One")
+                              .add("Two")
+                              .add("Three")
+                              .build();
+   stream.forEach(System.out::println);
+ ```
+ 3️⃣ Using Stream.generate()
+  ```
+   Stream<Double> randomStream = Stream.generate(Math::random);
+   randomStream.limit(5).forEach(System.out::println);
+  ```
+ 4️⃣ Using Stream.iterate()
+  ```
+   Stream<Integer> numbers = Stream.iterate(1, n -> n + 1);
+   numbers.limit(5).forEach(System.out::println);
+  ```
+ 5️⃣ Using IntStream, LongStream, DoubleStream
+  ```
+   IntStream intStream = IntStream.range(1, 6);
+   intStream.forEach(System.out::println);
+
+  ```
