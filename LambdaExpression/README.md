@@ -54,6 +54,6 @@ Build-In Functional interfaces are pre-defined interfaces provided by java in th
 
 |Category|Interface|Method|Description|Example|
 |--------|---------|------|-----------|-------|
-|Consumer|Consumer<T>|accept(T t)|Takes input returns nothing|x->|
+|Consumer|Consumer&ltT&gt|accept(T t)|Takes input returns nothing|x->|
 
 # Use Cases of Lambda Expressions
