@@ -18,6 +18,7 @@ What we can do with Stream API:
 
 ## Stream Pipeline
 - A Stream Pipeline is a sequence of stream operations that process data in a step-by-step flow — starting from a data source, through one or more intermediate operations, and ending with a terminal operation.
+>[!TIP]
 - --(1)-> Data Source (The data which needs to be processed)
       -(2)--> Intermediate Operations (Pass through several filters, transformers, or sorters)
          -(3)--> Terminal Operation (And finally produce a result)
