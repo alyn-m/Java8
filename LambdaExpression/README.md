@@ -62,3 +62,37 @@ Build-In Functional interfaces are pre-defined interfaces provided by java in th
 |Operator|Operator < T>|apply(T t)|Input and Output are same type|```x -> x.toUpperCase()```|
 
 # Use Cases of Lambda Expressions
+
+##💻 Example: Using All Core Functional Interfaces
+```
+import java.util.function.*;
+
+public class BuiltInFunctionalExample {
+    public static void main(String[] args) {
+        // Consumer
+        Consumer<String> printer = msg -> System.out.println("Message: " + msg);
+        printer.accept("Hello Lambda!");
+
+        // Supplier
+        Supplier<Double> randomValue = () -> Math.random();
+        System.out.println("Random: " + randomValue.get());
+
+        // Function
+        Function<Integer, String> converter = n -> "Value: " + n;
+        System.out.println(converter.apply(10));
+
+        // Predicate
+        Predicate<Integer> isEven = n -> n % 2 == 0;
+        System.out.println("Is 8 even? " + isEven.test(8));
+
+        // UnaryOperator
+        UnaryOperator<String> upper = str -> str.toUpperCase();
+        System.out.println(upper.apply("java8"));
+
+        // BinaryOperator
+        BinaryOperator<Integer> add = (a, b) -> a + b;
+        System.out.println("Sum: " + add.apply(5, 3));
+    }
+}
+
+```
