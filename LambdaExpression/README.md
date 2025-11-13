@@ -51,6 +51,7 @@ Build-In Functional interfaces are pre-defined interfaces provided by java in th
 >[!Note]
 >all built-in interfaces are provided in java.util.function pakage
 **Categories of Built-In Functional Interfaces**
+
 |Category|Interface|Method|Description|Example|
 |--------|---------|------|-----------|-------|
 |Consumer|Consumer<T>|accept(T t)|Takes input returns nothing|x->|
