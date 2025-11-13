@@ -71,8 +71,9 @@ What we can do with Stream API:
 # Fundamentals
 ## Everything about Streams
 What is Stream?
-- It is a sequence of elements.
-
+ - It is a sequence of elements.
+How to create streams?
+ - We can not only create streams using collection, we can also create manually using factory methods, generators, builders or even I/O Sources.
 ### Basic Syntax
  1️⃣ Using Stream.of()
    ```
