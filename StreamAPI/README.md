@@ -22,6 +22,7 @@ What we can do with Stream API:
       -(2)--> Intermediate Operations (Pass through several filters, transformers, or sorters)
          -(3)--> Terminal Operation (And finally produce a result)
 ### Structure of a Stream Pipeline
+A pipeline is a chain of stream operations (source → intermediate → terminal).
 >[!Note]
 >[Source] → [Intermediate Operations] → [Terminal Operation]
 
@@ -35,6 +36,10 @@ What we can do with Stream API:
 |Other Streams|limit(n)|findFirst()|
 
 ## How Streams works internally
+1. When you call .stream(), a Stream object is created (not data copied).
+2. Intermediate operations are recorded (like steps in a plan).
+3. Terminal operation executes the plan — applies intermediate operations one element at a time.
+4. After a terminal operation, the Stream is closed (cannot be reused).
 |Stage|Operation|Description|
 |-----|---------|-----------|
 |1️⃣|names.stream()|Creates stream source|
