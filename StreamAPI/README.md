@@ -22,9 +22,9 @@ What we can do with Stream API:
       -(2)--> Intermediate Operations (Pass through several filters, transformers, or sorters)
          -(3)--> Terminal Operation (And finally produce a result)
 ### Structure of a Stream Pipeline
-A pipeline is a chain of stream operations (source → intermediate → terminal).
 >[!Note]
 >[Source] → [Intermediate Operations] → [Terminal Operation]
+
 
 
 |1️⃣ Source|2️⃣ Intermediate Operations|3️⃣ Terminal Operations|
