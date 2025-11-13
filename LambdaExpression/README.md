@@ -5,7 +5,7 @@
 
 ** Note: We need to create functional interface before creating a lamdba expression. if there is not functional interface then there is not lambda expression possible.**
 
-**Implementation of functional interface method is known as lamdba expression**
+**A Lambda Expression is a Shorthand way to implement single abstract method of a functional interface.**
 ### Lambda Expression Syntax
 - The Lambda Expression composed of 3 elements seperated by arrow token(->):
     - Syntax:
