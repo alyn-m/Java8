@@ -26,6 +26,7 @@ A pipeline is a chain of stream operations (source → intermediate → terminal
 >[!Note]
 >[Source] → [Intermediate Operations] → [Terminal Operation]
 
+
 |1️⃣ Source|2️⃣ Intermediate Operations|3️⃣ Terminal Operations|
 |---------|--------------------------|----------------------|
 |This is where the stream begins-data comes from|These are lazy operations that transform or filter the stream’s data|These are eager operations — once called, the entire pipeline executes|
