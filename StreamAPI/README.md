@@ -41,7 +41,8 @@ What we can do with Stream API:
 1. When you call .stream(), a Stream object is created (not data copied).
 2. Intermediate operations are recorded (like steps in a plan).
 3. Terminal operation executes the plan — applies intermediate operations one element at a time.
-4. After a terminal operation, the Stream is closed (cannot be reused).  
+4. After a terminal operation, the Stream is closed (cannot be reused).    \
+   
 |Stage|Operation|Description|
 |-----|---------|-----------|
 |1️⃣|names.stream()|Creates stream source|
