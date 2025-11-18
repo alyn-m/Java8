@@ -11,7 +11,7 @@
 ### Lambda Expression Syntax
 - The Lambda Expression composed of 3 elements seperated by arrow token(->):
     - Syntax:
-        - (params) -> {body of expression}
+        - (parameters) -> {body of expression}
         - (params): Input arguments required by the functional interface method, enclosed in parentheses ()
         - -> (arrow token): Separates the parameters from the body.
         - Body : The expression or block({}) of code that executes when the method is called.
@@ -38,7 +38,11 @@
            Function<Integer, Integer> squre = x -> x * x;
            System.out.println(squre.apply(4));
           ```  
-     
+### History of Lambda:
+ - The word Lambda comes from Lambda Calculus, A mathematical model of computation invented by Alonzo Church, where:
+ - ```λx . x + 1```
+>means:A function that takes parameter x and returns x + 1.
+
 ### Why we need a functional interface to create lambda expression
 > A lambda expression has no type on its own. The Java compiler needs to know: “Which method’s implementation is this lambda providing?”
 > we can use built-in functional interfaces to lambdas.
@@ -96,3 +100,13 @@ public class BuiltInFunctionalExample {
 }
 
 ```
+
+## Internal Details of Lamdas in Java
+ - Java lambdas are NOT anonymous inner classes and not compiled as a class file.
+### Step-1: Compiler Generates Invokedynamic Instruction
+ - The compiler creates a special JVM instruction:
+   ```invokedynamic```
+ - This instruction calls ```java.lang.invoke.LambdaMetafactory``` which is responsible for:
+    1. creating the lambda object
+    2. linking it to the functional interface
+    3. creating bytecode for it at runtime
