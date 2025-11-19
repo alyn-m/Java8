@@ -4,11 +4,18 @@ Below are collapsible flashcards using `<details>` tags so answers stay hidden u
 
 ---
 
-## Flashcard 1 — What is a Stream?
+## Flashcard 0 — What is a Stream?
 <details>
   <summary>Show Answer</summary>
+In simple terms, A Stream is a Sequence of elements/data. <br>
+other words, A stream is a sequence of Data flowing through a pipeline where you transform, filter or reduce it - without midifying the original source.
+</details>
 
-A Stream is a functional, lazy, ordered/unordered pipeline for processing data.
+---
+## Flashcard 1 — What is a Stream API?
+<details>
+  <summary>Show Answer</summary>
+    Stream API is a collection of methods used to process the objects present in the collection. 
 </details>
 
 ---
@@ -22,10 +29,21 @@ Collection stores data; Stream processes data. Streams do not modify or store da
 
 ---
 
-## Flashcard 3 — Three parts of a Stream pipeline?
+---
+
+## Flashcard 2.1 — Why Stream API is desinged or developed?
 <details>
   <summary>Show Answer</summary>
 
+Collection stores data; Stream processes data. Streams do not modify or store data.
+</details>
+
+---
+
+## Flashcard 3 — How many parts of a Stream pipeline?
+<details>
+  <summary>Show Answer</summary>
+Stream Piple line consist of 3 steps as mentioned below: <br>
 **Source → Intermediate Operations → Terminal Operation**
 </details>
 
