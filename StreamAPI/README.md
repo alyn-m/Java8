@@ -213,6 +213,6 @@ How to create streams?
  4. reduce()
 
 >[!warning]
->How to Identify Whether a Stream Operation is Terminal or Intermediate
->If the method returns a Stream → Intermediate Operation
->If the method does NOT return a Stream → Terminal Operation
+>How to Identify Whether a Stream Operation is Terminal or Intermediate <br>
+>If the method returns a Stream → Intermediate Operation <br>
+>If the method does NOT return a Stream → Terminal Operation 
