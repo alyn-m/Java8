@@ -44,6 +44,8 @@ What we can do with Stream API:
  - Intermediate Operations: Intermediate operations transform the elements of a stream. Common operations include filter, map, and sorted.
  - Terminal Operations: Terminal operations produce a result or a side-effect, such as forEach, collect, or count.
 
+<img width="768" height="361" alt="image" src="https://github.com/user-attachments/assets/157c6c9a-21e2-41ad-b251-1e43a33a7096" />
+
 
 
 |1️⃣ Source|2️⃣ Intermediate Operations|3️⃣ Terminal Operations|
