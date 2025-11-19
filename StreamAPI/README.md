@@ -239,6 +239,7 @@ How to create streams?
                                     .allMatch(n -> n % 2 == 0);   // true```
  21. anyMatch()
       - Check if at least one element matches.
+      - retuns: boolean
       - Example:
          - ```boolean hasEven = List.of(1, 3, 4).stream()
                                      .anyMatch(n -> n % 2 == 0);   // true```
@@ -254,15 +255,16 @@ How to create streams?
          - ```List<String> list = List.of("A", "B", "C");
               list.stream()
                   .skip(1)    // B, C
-                  .toList();```
+                  .toList();
+           ```
  28. peek()
       - Debug values during stream operations.
       - Example:
          - ```List.of(1, 2, 3).stream()
                               .peek(n -> System.out.println("Processing: " + n))
-                              .toList();```
+                              .toList();
+           ```
  30. sorted()
-      - 
  32. average()
       - (Available in IntStream, DoubleStream, LongStream)
  34. range()
