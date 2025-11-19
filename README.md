@@ -6,13 +6,13 @@ This Repository included all the features added in Java 8 version
 2. Functional Interfaces
    - java.util.function Package (Predicate, Function, Supplier, etc.)
 3. Stream API
-4. Interfaces:
+    - Collectors and Reduction Operations
+    - Parallel Streams
+5. Interfaces:
    - Default Methods in Interfaces
    - Static Methods in Interfaces
-5. java.util.Optional
-6. New Date and Time API (java.time)
-7. Collectors and Reduction Operations
-8. Parallel Streams
+6. java.util.Optional
+7. New Date and Time API (java.time)
 9. Method References
 10. Nashorn JavaScript Engine
 11. CompletableFuture and java.util.concurrent enhancements
