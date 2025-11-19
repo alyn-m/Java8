@@ -134,6 +134,7 @@ What we can do with Stream API:
 ## Everything about Streams
 What is Stream?
  - It is a sequence of elements.  
+
 How to create streams?
  - We not only can create streams using collection, we can also create manually using factory methods, generators, builders or even I/O Sources.
 ### Basic Syntax
@@ -167,3 +168,51 @@ How to create streams?
    intStream.forEach(System.out::println);
 
   ```
+ 6. Using stream() method : This method will consider the collection as the data source and generate a sequential stream.
+ 7. Using parallelStream() method - Instead of generating a sequential stream, this method will generate a parallel stream.
+
+## Intermediate Stream Operations in Java
+### Category-1: Filtering
+### Category-2: Mapping
+### Category-3: FlatMapping
+### Category-4: Sorting
+### Category-5: Peeking
+ 1. filter()
+ 2. map()
+ 3. limit()symxchange_config.properties
+ 4. min()
+ 5. max()
+ 6. collect()
+ 7. count()
+ 8. distinct()
+ 9. reduce()
+ 10. takeWhile()
+ 11. allMatch()
+ 12. anyMatch()
+ 13. findAny()
+ 14. findFirst()
+ 15. skip()
+ 16. peek()
+ 17. sorted()
+ 18. average()
+ 19. range()
+ 20. rangeClosed()
+ 21. boxed()
+
+## Terminal Stream Operations in Java
+### Category-1: Reduction
+### Category-2: Collecting
+### Category-3: Iteration
+### Category-4: Matching
+### Category-5: Finding
+### Category-6: Stats       
+### Category-7: Arrays
+ 1. collect()
+ 2. forEach()
+ 3. forEachOrder()
+ 4. reduce()
+
+>[!warning]
+>How to Identify Whether a Stream Operation is Terminal or Intermediate
+>If the method returns a Stream → Intermediate Operation
+>If the method does NOT return a Stream → Terminal Operation
