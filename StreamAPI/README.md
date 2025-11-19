@@ -76,6 +76,48 @@ What we can do with Stream API:
  3.  Calculate the sum of all numbers
  4.  Print numbers in parallel
  5.  Group items by name and count their occurrences
+ 6.  Convert database rows into DTOs
+ 7.  Group audit logs by user
+ 8.  Identify slow endpoints in API monitoring
+ 9.  Generate report summaries
+ 10.  Process REST API responses in bulk
+ 11.  Chunk data for batch processing
+ 12.  Combine configs from multiple YAML files (flatten)
+ 13.  Extract logs of specific microservices
+ 14.  Aggregate CPU usage for autoscaling decisions
+ 15.  Filter EC2 instances by state
+ 16.  Mask sensitive fields in logs
+ 17.  Remove whitelisted IPs from firewall logs
+ 18.  Extract failed login attempts from logs
+ 19.  Identify potential brute-force attack patterns
+ 20.  Convert raw text to tokens (NLP preprocessing)
+ 21.  Remove empty/invalid training samples
+ 22.  Transform insurance claims into payer-specific formats
+ 23.  Extract patients with abnormal clinical results
+ 24.  Identify duplicate medical prescriptions
+ 25.  Filter out invalid or missing patient records
+ 26.  Convert raw ISO8583 message fields into a business DTO
+ 27.  Classify transactions based on risk score (AML system)
+ 28.  Aggregate customer’s daily transaction limit usage
+ 29.  Filter failed or reversed payment transactions
+ 30.  RTP
+ 31.  Filter out duplicate messages using Streams
+ 32.  Validate TTL (message time expiry)
+ 33.  Validate creditor agent availability
+ 34.  Transform inbound XML → ISO20022 DTO using Stream map()
+ 35.  Apply multiple validations in a pipeline
+ 36.  ACH
+ 37.  Read ACH file lines into DTOs
+ 38.  Check duplicate file
+ 39.  Validate file structure using Streams
+ 40.  Group by transaction type using groupingBy
+ 41.  Convert each ACH record → ISO message
+ 42.  Validate all job configurations before launching
+ 43.  Extract ECR image URIs
+ 44.  Build ECS task definitions using map()
+ 45.  Aggregate execution time for monitoring
+ 46.  Filter failed tasks for retries
+ 47.  Launch multiple Fargate tasks in parallel
 
 
 ## Use Cases:
