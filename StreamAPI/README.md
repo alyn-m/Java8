@@ -15,16 +15,34 @@ What we can do with Stream API:
  4. Composability: Multiple operations can be chained together, forming a pipeline for data processing.
  5. Ease of Transformation: Easily transform data into different formats or structures using mapping and flat-mapping techniques.
 
+## Why Stream API:
+### Before Stream API introduced:
+ - Before Java 8 streams, processing collection invloved writing imperative loops, which could lead to verbose and error prone code
+ - Common Problems are:
+    1. Boilerplate Code: Writing iterative loops (for or while loops) to perform operations on collections resulted in verbose and boilerplate code.
+    2. Lack of Parallelism:Achieving parallelism in traditional loop-based code requires explicit management of threads, leading to complexity and potential bugs.
+    3. Lack of Composition: It was challenging to compose multiple operations (e.g., filter, map, and reduce) in a concise and readable manner.
+### With the Streams in Java 8, many of these problems were addressed, offering several advantages:
+ 1. Declarative Syntax: Streams provide a declarative syntax for processing collections, enabling concise and readable code.
+ 2. Functional Style: Streams support functional-style programming paradigms, allowing operations to be composed and performed in a fluent and expressive manner.
+ 3. Immutable Data: Streams operate on immutable data, avoiding side effects and promoting thread safety, making them suitable for parallel processing.
+ 4. Lazy Evaluation: Streams use lazy evaluation, meaning intermediate operations are only executed when terminal operations are invoked, resulting in optimized performance.
+
 
 ## Stream Pipeline
 - A Stream Pipeline is a sequence of stream operations that process data in a step-by-step flow — starting from a data source, through one or more intermediate operations, and ending with a terminal operation.
 >[!TIP]
-- --(1)-> Data Source (The data which needs to be processed)
-      -(2)--> Intermediate Operations (Pass through several filters, transformers, or sorters)
-         -(3)--> Terminal Operation (And finally produce a result)
+- --(1)-> Data Source (The data which needs to be processed)  <br>
+      -(2)--> Intermediate Operations (Pass through several filters, transformers, or sorters)  <br>
+         -(3)--> Terminal Operation (And finally produce a result) 
 ### Structure of a Stream Pipeline
 >[!Note]
 >[Source] → [Intermediate Operations] → [Terminal Operation]
+
+### Basics of Stream Pipeline
+ - Creating Stream: Steams can be created in multiple ways.
+ - Intermediate Operations: Intermediate operations transform the elements of a stream. Common operations include filter, map, and sorted.
+ - Terminal Operations: Terminal operations produce a result or a side-effect, such as forEach, collect, or count.
 
 
 
