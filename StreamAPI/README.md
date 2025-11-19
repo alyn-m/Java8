@@ -178,26 +178,98 @@ How to create streams?
 ### Category-4: Sorting
 ### Category-5: Peeking
  1. filter()
- 2. map()
- 3. limit()symxchange_config.properties
- 4. min()
- 5. max()
- 6. collect()
- 7. count()
- 8. distinct()
- 9. reduce()
- 10. takeWhile()
- 11. allMatch()
- 12. anyMatch()
- 13. findAny()
- 14. findFirst()
- 15. skip()
- 16. peek()
- 17. sorted()
- 18. average()
- 19. range()
- 20. rangeClosed()
- 21. boxed()
+     - Keep only elements that satisfy a condition.
+     - Example:
+        - ```List<Integer> nums = List.of(1, 2, 3, 4);
+             nums.stream()
+                 .filter(n -> n % 2 == 0)      // keep even numbers
+                 .toList();```
+ 3. map()
+     - Transform each element.
+     - Example:
+        - ```List<String> names = List.of("ali", "bob");
+             names.stream()
+                  .map(String::toUpperCase)   // ali → ALI
+                  .toList();```
+ 5. limit()
+     - Take first n elements.
+     - Example:
+        - ```List<String> list = List.of("A", "B", "C", "D");
+             list.stream()
+                 .limit(2)     // A, B
+                 .toList();```
+ 7. min()
+ 8. max()
+ 9. collect()
+      - Gather elements into a collection.
+      - Example:
+         - ```List<String> names = List.of("A", "B");
+              List<String> result = names.stream()
+                                         .collect(Collectors.toList());```
+ 11. count()
+      - Count elements.
+      - Example:
+         - ```List<String> list = List.of("A", "B", "C");
+              long total = list.stream().count();   // 3```
+ 13. distinct()
+      - Remove duplicates.
+      - Example:
+         - ```List<Integer> nums = List.of(1, 2, 2, 3);
+              nums.stream()
+                  .distinct()     // 1, 2, 3
+                  .toList();```
+ 15. reduce()
+      - Combine all elements to a single value.
+      - Example:
+         - ```List<Integer> nums = List.of(1, 2, 3);
+              int sum = nums.stream()
+                            .reduce(0, Integer::sum);   // 6```
+ 17. takeWhile()
+      - Take elements until condition becomes false.
+      - Example:
+         - ```List<Integer> nums = List.of(1, 2, 3, 0, 4);
+              nums.stream()
+                  .takeWhile(n -> n > 0)   // stops at 0 → 1,2,3
+                  .toList();```
+ 19. allMatch()
+      - Check if all elements match a condition.
+      - Example:
+         - ```List<Integer> nums = List.of(2, 4, 6);
+              boolean allEven = nums.stream()
+                                    .allMatch(n -> n % 2 == 0);   // true```
+ 21. anyMatch()
+      - Check if at least one element matches.
+      - Example:
+         - ```boolean hasEven = List.of(1, 3, 4).stream()
+                                     .anyMatch(n -> n % 2 == 0);   // true```
+ 23. findAny()
+      - Get any element (non-deterministic in parallel).
+      - Example:
+         - ```List<String> names = List.of("A", "B", "C");
+              names.stream().findAny().get();   // returns any one```
+ 25. findFirst()
+ 26. skip()
+      - Skip first n elements.
+      - Example:
+         - ```List<String> list = List.of("A", "B", "C");
+              list.stream()
+                  .skip(1)    // B, C
+                  .toList();```
+ 28. peek()
+      - Debug values during stream operations.
+      - Example:
+         - ```List.of(1, 2, 3).stream()
+                              .peek(n -> System.out.println("Processing: " + n))
+                              .toList();```
+ 30. sorted()
+      - 
+ 32. average()
+      - (Available in IntStream, DoubleStream, LongStream)
+ 34. range()
+      - Create a sequence from start (inclusive) to end (exclusive).
+ 36. rangeClosed()
+ 37. boxed()
+      - Convert primitive stream → Stream<Integer>, Stream<Double>, etc.
 
 ## Terminal Stream Operations in Java
 ### Category-1: Reduction
