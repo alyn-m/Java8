@@ -20,6 +20,22 @@
  4. Serialization:
      - Encoding binary blobs (like cryptographic keys, digital signatures, or binary file data) before storing them in text-based storage formats (like JSON, XML, or plain-text database fields).
    
+ 5. Encode ISO20022 pain/pacs XML for logging
+ 6. certificate fingerprints
+ 7. Use Base64 when storing the original raw ACH file in DB
+ 8. Use Base64 to send ACH → ISO20022 transformed payload to HUB Core
+ 9. Base64 encode environment variables
+ 10. Decode Base64 logs coming from container
+ 11. diagnostic images
+ 12. PDF lab reports
+ 13. binary clinical documents
+ 14. Encode public/private key material
+ 15. Encode digital signatures
+ 16. sending image bytes
+ 17. transcription audio bytes
+ 18. embeddings as binary
+
+   
 ## What is base64?
  - Base64 is an encoding technique, that converts binary data into an ASCII string format.
 ### Pupose of base64?
@@ -41,6 +57,9 @@
   
  - >[!Note]
    >It's essentially a way to make binary data look like safe, transmittable text.
+
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/37d55216-eb58-44c6-b2db-38be746df849" />
+
 
 ## Programming:
  1. Encoding (Binary to Text)  : To convert an array of bytes into a Base64 string:
