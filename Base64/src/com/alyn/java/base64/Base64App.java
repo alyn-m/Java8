@@ -40,5 +40,6 @@ public class Base64App {
 		String decodedString = new String(decodedBytes, StandardCharsets.UTF_8);
 		
 		return decodedString;
+		
 	}
 }
