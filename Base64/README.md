@@ -41,5 +41,53 @@
   
  - >[!Note]
    >It's essentially a way to make binary data look like safe, transmittable text.
-   
+
+## Programming:
+ 1. Encoding (Binary to Text)  : To convert an array of bytes into a Base64 string:
+     - ```import java.util.Base64;
+          import java.nio.charset.StandardCharsets;
+
+          public class Base64Example {
+                public static void main(String[] args) {
+                String originalData = "This is a secret message.";
+                byte[] inputBytes = originalData.getBytes(StandardCharsets.UTF_8);
+
+                // Get the standard Base64 encoder
+                Base64.Encoder encoder = Base64.getEncoder();
+
+               // Perform the encoding
+               String encodedString = encoder.encodeToString(inputBytes);
+
+               System.out.println("Original: " + originalData);
+               System.out.println("Encoded:  " + encodedString);
+               // Output will be something like: VGhpcyBpcyBhIHNlY3JldCBtZXNzYWdlLg==
+              }
+          }
+       ```
+  2. Decoding (Text to Binary)   :  To convert a Base64 string back into the original byte array:
+      - ```
+        import java.util.Base64;
+        import java.nio.charset.StandardCharsets;
+
+        public class Base64DecoderExample {
+               public static void main(String[] args) {
+               String encodedString = "VGhpcyBpcyBhIHNlY3JldCBtZXNzYWdlLg=="; // Example encoded string
+
+               // Get the standard Base64 decoder
+               Base64.Decoder decoder = Base64.getDecoder();
+
+               // Perform the decoding
+               byte[] decodedBytes = decoder.decode(encodedString);
+
+               // Convert the byte array back to a string for viewing
+               String decodedString = new String(decodedBytes, StandardCharsets.UTF_8);
+
+               System.out.println("Encoded:  " + encodedString);
+               System.out.println("Decoded:  " + decodedString);
+               // Output: Decoded:  This is a secret message.
+            }
+        }
+        ```
+
+
      
