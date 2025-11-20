@@ -6,33 +6,33 @@ This Repository included all the features added in Java 8 version
 2. Functional Interfaces
    - java.util.function Package (Predicate, Function, Supplier, etc.)
 3. Stream API
-4. Interfaces:
+    - Collectors and Reduction Operations
+    - Parallel Streams
+5. Interfaces:
    - Default Methods in Interfaces
    - Static Methods in Interfaces
-5. java.util.Optional
-6. New Date and Time API (java.time)
-Collectors and Reduction Operations
-Parallel Streams
-Method References
-Nashorn JavaScript Engine
-CompletableFuture and java.util.concurrent enhancements
-Base64 Encoding and Decoding API
-Annotations on Types (Type Annotations)
-Repeating Annotations
-Improved Type Inference
-New Optional Class
-Files.lines() and Streams for I/O
-Improved Concurrency Utilities
-ForEach Method on Collections
-New Date/Time Classes (LocalDate, LocalTime, LocalDateTime, ZonedDateTime)
-Clock and Instant Classes
-Period and Duration Classes
-Unsigned Arithmetic Support
-StringJoiner Class
-Parallel Array Sorting (Arrays.parallelSort)
-Improved HashMap Performance
-Remove PermGen Space (Replaced by Metaspace)
-New API for Bulk Data Operations
-CompletableFuture Async Pipelines
-Collectors Utility Class (Grouping, Partitioning)
-Enhanced Security and SSL/TLS Updates
+6. java.util.Optional
+7. New Date and Time API (java.time)
+9. Method References
+10. Nashorn JavaScript Engine
+11. CompletableFuture and java.util.concurrent enhancements
+12. Base64 Encoding and Decoding API
+13. Annotations on Types (Type Annotations)
+14. Repeating Annotations
+15. Improved Type Inference
+16. New Optional Class
+17. Files.lines() and Streams for I/O
+18. Improved Concurrency Utilities
+19. ForEach Method on Collections
+20. New Date/Time Classes (LocalDate, LocalTime, LocalDateTime, ZonedDateTime)
+21. Clock and Instant Classes
+22. Period and Duration Classes
+23. Unsigned Arithmetic Support
+24. StringJoiner Class
+25. Parallel Array Sorting (Arrays.parallelSort)
+26. Improved HashMap Performance
+27. Remove PermGen Space (Replaced by Metaspace)
+28. New API for Bulk Data Operations
+29. CompletableFuture Async Pipelines
+30. Collectors Utility Class (Grouping, Partitioning)
+31. Enhanced Security and SSL/TLS Updates
