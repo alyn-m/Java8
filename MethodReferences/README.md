@@ -11,6 +11,10 @@ What are Method references ?
 >[!Important]
 >object::methodName
 
+## Use Cases:
+>[!Notes]
+>Rather then writing a lambda expression we can write Method References.
+
 ## Types of Method References
 1. Static Method Reference
 2. Instance Method Reference
