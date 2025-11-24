@@ -16,6 +16,9 @@ What are Method references ?
 >[!Note]
 >Rather then writing a lambda expression we can write Method References.
 
+- When to use: 
+Most of the time, we do some operations inside the lambda expression. Sometimes, however, a lambda expression does nothing but call an existing method. In those cases, it’s often clearer to refer to the existing method by name. 
+
 ## Types of Method References
 1. Static Method Reference
 2. Instance Method Reference
