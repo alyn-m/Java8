@@ -4,7 +4,7 @@
 >💡 In simple terms: A lambda is a short way of writing anonymous methods.
 
 >[!NOTE]
-- We need to create functional interface before creating a lamdba expression. if there is not functional interface then there is not lambda expression possible.
+- We need to create functional interface before creating a lamdba expression. if there is no functional interface then there is no lambda expression possible.
 - Without a functional interface, you cannot create or use a lambda expression in Java.
 
 **A Lambda Expression is a Shorthand way to implement single abstract method of a functional interface.**
