@@ -7,6 +7,9 @@ What are Method references ?
 >[!Warning]
 >A method reference must always be assigned to a functional interface.
 
+## Syntax:
+>[!Important]
+>object::methodName
 
 ## Types of Method References
 1. Static Method Reference
