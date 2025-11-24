@@ -3,6 +3,7 @@
 
 What are Method references ?
 - Method references is a way to refer to existing methods without writing a lambda expressions.
+- Method references are a special type of lambda expression. They’re often used to create simple lambda expressions by referring to existing methods. 
 
 >[!Warning]
 >A method reference must always be assigned to a functional interface.
