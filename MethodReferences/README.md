@@ -12,7 +12,7 @@ What are Method references ?
 >object::methodName
 
 ## Use Cases:
->[!Notes]
+>[!Note]
 >Rather then writing a lambda expression we can write Method References.
 
 ## Types of Method References
