@@ -172,6 +172,17 @@ How to create streams?
  7. Using parallelStream() method - Instead of generating a sequential stream, this method will generate a parallel stream.
 
 ## Intermediate Stream Operations in Java
+| Category                                 | Operations                                            |
+| ---------------------------------------- | ----------------------------------------------------- |
+| **Filtering**                            | filter, distinct, takeWhile, dropWhile                |
+| **Transforming**                         | map, mapToInt, mapToLong, mapToDouble                 |
+| **Flattening**                           | flatMap, flatMapToInt, flatMapToLong, flatMapToDouble |
+| **Peeking**                              | peek                                                  |
+| **Sorting**                              | sorted                                                |
+| **Slicing**                              | limit, skip                                           |
+| **Numeric Conversions**                  | asLongStream, asDoubleStream, boxed                   |
+| **Stream Creation (still intermediate)** | flatMap creates new streams                           |
+
 ### Category-1: Filtering
 ### Category-2: Mapping
 ### Category-3: FlatMapping
@@ -274,6 +285,16 @@ How to create streams?
       - Convert primitive stream → Stream<Integer>, Stream<Double>, etc.
 
 ## Terminal Stream Operations in Java
+| Category            | Operations                                        |
+| ------------------- | ------------------------------------------------- |
+| **Collecting**      | collect, toArray                                  |
+| **Reducing**        | reduce, sum, max, min, average, summaryStatistics |
+| **Matching**        | anyMatch, allMatch, noneMatch                     |
+| **Retrieval**       | findFirst, findAny                                |
+| **Iteration**       | forEach, forEachOrdered                           |
+| **Counting**        | count                                             |
+| **Primitive Stats** | sum, avg, min, max                                |
+
 ### Category-1: Reduction
 ### Category-2: Collecting
 ### Category-3: Iteration
